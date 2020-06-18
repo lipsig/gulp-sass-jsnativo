@@ -31,7 +31,7 @@ const limpar = (x) => {
         }
     }
 }
-function busca() {
+const busca = ()=> {
     //pegando input
     var input = document.getElementById("search");
 

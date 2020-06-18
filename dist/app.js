@@ -30,7 +30,7 @@ var limpar = function limpar(x) {
   }
 };
 
-function busca() {
+var busca = function busca() {
   //pegando input
   var input = document.getElementById("search"); // guardar em variavel e passar para maiuscula para bater com a baseva
 
@@ -123,4 +123,4 @@ function busca() {
     input.value = "Digite algo na pesquisa";
     input.style.color = "red";
   }
-}
+};
