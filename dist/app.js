@@ -2,7 +2,14 @@
 
 //inicializar variavel mais tarde sera populada pela requisição
 var encomendas = {};
-var encomendaPesquisada = []; //função para limpar input no focus
+var encomendaPesquisada = []; //previnir enter
+
+var handle = function handle(e) {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+  }
+}; //função para limpar input no focus
+
 
 var limpar = function limpar(x) {
   x.value = "";

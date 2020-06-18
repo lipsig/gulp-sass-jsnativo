@@ -3,6 +3,13 @@
 var encomendas = {};
 var encomendaPesquisada = [];
 
+//previnir enter
+const handle = (e) => {
+    if (e.keyCode === 13) {
+        e.preventDefault();
+    }
+}
+
 //função para limpar input no focus
 const limpar = (x) => {
     x.value = "";
